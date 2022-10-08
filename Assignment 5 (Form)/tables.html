@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px black solid;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 15px;
+      }
+
+      header {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+      label {
+        color: teal;
+        display: block;
+        font-size: 16px;
+        margin: 5px 15px;
+      }
+      input,
+      textarea {
+        margin: 0px 15px;
+      }
+      button {
+        background-color: teal;
+        color: white;
+        display: block;
+        margin: 15px 15px;
+      }
+      footer {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Sign Up Form</header>
+
+    <main>
+      <p>Personal Detail</p>
+      <form>
+        <label for="fname"> First Name *</label>
+        <input
+          type="text"
+          placeholder="Please Type your name here"
+          name="fname"
+          required
+        />
+        <label for="lname"> Last Name</label>
+        <input
+          type="text"
+          placeholder="Please Type your surname here"
+          name="lname"
+        />
+        <label for="age"> Age</label>
+        <input
+          type="number"
+          placeholder="Please Type your surname here"
+          name="age"
+          min="0"
+        />
+        <label for="DOB"> D.O.B *</label>
+        <input
+          type="date"
+          placeholder="Please Type your D.O.B here"
+          name="DOB"
+          required
+        />
+        <label for="ADDRESS"> Permanent address*</label>
+        <textarea
+          type="text"
+          placeholder="Please Type your address here"
+          name="ADDRESS"
+          rows="3"
+          cols="15"
+          required
+        >
+ Enter your address</textarea
+        >
+        <label for="Pno"> Phone No.*</label>
+        <input
+          type="number"
+          placeholder="Please Type your Phone No. here"
+          name="Pno"
+          required
+        />
+
+        <label for="Gender">Male</label>
+        <input type="radio" name="Gender" value="male" />
+        <label for="Gender">Female</label>
+        <input type="radio" name="Gender" value="fmale" />
+
+        <label for="file">Browse file.</label>
+        <input type="file" name="file" />
+
+        <label for="file">Browse Multiple file.</label>
+        <input type="file" name="file" multiple />
+
+        <label for="AddharNo">Addhar-card No.*</label>
+        <input type="number" name="AddharNo" required />
+
+        <label for="email">Email Addres*</label>
+        <input type="email" name="email" required />
+
+        <label for="pass">Pasword</label>
+        <input type="password" name="pass" />
+
+        <button type="button">Submit</button>
+        <button type="button">Reset</button>
+      </form>
+    </main>
+    <footer>* mark items Must be filled</footer>
+  </body>
+</html>

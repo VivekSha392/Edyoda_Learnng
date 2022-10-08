@@ -1,0 +1,40 @@
+.header {
+  padding-top: 15px;
+  padding-left: 10px;
+  margin: 0;
+  background-color: rgb(116, 127, 128);
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  height: 50px;
+}
+image {
+  position: absolute;
+}
+.link {
+  padding-left: 50px;
+  color: white;
+}
+button {
+  margin-left: 50px;
+  background-color: rgb(236, 165, 165);
+  font-size: 20px;
+  color: white;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: #bbb;
+}
+button a {
+  color: black;
+}
+button a:hover {
+  color: white;
+}
+.logo {
+  float: left;
+}
+.active {
+  color: white;
+}

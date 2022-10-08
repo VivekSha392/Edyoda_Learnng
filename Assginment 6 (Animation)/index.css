@@ -1,0 +1,99 @@
+body {
+  margin: 100px 100px;
+}
+div {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+.div-1 {
+  background-color: red;
+  border: 1px black solid;
+  /* animation-name: div1;
+  animation-duration: 4s; */
+  position: absolute;
+  animation: div1 5s ease infinite alternate;
+}
+.div-2 {
+  background-color: green;
+  /* animation-name: div2;
+  animation-duration: 4s; */
+  position: absolute;
+  border: 1px black solid;
+  /* margin-left: 400px; */
+  margin-top: 600px;
+  animation: div2 5s ease infinite alternate;
+}
+.div-3 {
+  background-color: yellow;
+  /* animation-name: div3;
+  animation-duration: 5s; */
+  position: absolute;
+  border: 1px black solid;
+  margin-left: 600px;
+  margin-top: 0px;
+  animation: div3 5s ease infinite alternate;
+}
+.div-4 {
+  background-color: orange;
+  /* animation-name: div4;
+    animation-duration: 4s; */
+  position: absolute;
+  border: 1px black solid;
+  margin-left: 600px;
+  margin-top: 600px;
+  animation: div4 5s ease infinite alternate;
+}
+
+@keyframes div1 {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: 250px;
+    left: 250px;
+    background-color: aqua;
+  }
+}
+
+@keyframes div2 {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: -250px;
+    left: 250px;
+    background-color: aqua;
+  }
+}
+
+@keyframes div3 {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: 250px;
+    left: -250px;
+    background-color: aqua;
+  }
+}
+
+@keyframes div4 {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+
+  100% {
+    top: -250px;
+    left: -250px;
+    background-color: aqua;
+  }
+
+  100% {
+    border: none;
+  }
+}
